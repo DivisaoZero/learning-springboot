@@ -30,6 +30,7 @@ public class ProdutoController {
     
     @PostMapping
     public String criar(@RequestBody String dadosProduto) {
+        logger.info("Requisição recebida em criar - dados: {}", dadosProduto);
         return "Criando produto: " + dadosProduto;
     }
 
