@@ -46,14 +46,14 @@ public class ProdutoController {
 
     @PutMapping("/{mat}")
     public String insert(@PathVariable Long mat) {
-        logger.info("Requisição recebida em inserir - matricula: {}", mat);
-        return "Cliente " + mat + " inserido com sucesso.";
+        logger.info("Requisição recebida via PUT - matricula: {}", mat);
+        return "Cliente matricula " + mat + " inserido com sucesso.";
     }
 
     @DeleteMapping("/{mat}")
     public String deletar(@PathVariable Long mat) {
-        logger.info("Requisição recebida em deletar - matricula: {}", mat);
-        return "Cliente " + mat + " deletado com sucesso.";
+        logger.info("Requisição recebida via DELETE - matricula: {}", mat);
+        return "Cliente matricula " + mat + " deletado com sucesso.";
     }
 
     
