@@ -46,7 +46,6 @@ public class ProdutoController {
 
     @DeleteMapping("/{mat}")
     public String deletar(@PathVariable Long mat) {
-        //Linha de teste para exlusão.
         return "Cliente " + mat + " deletado com sucesso.";
     }
 
