@@ -43,5 +43,12 @@ public class ProdutoController {
     public String deletar(@PathVariable Long id) {
         return "Produto " + id + " deletado com sucesso.";
     }
+
+    @DeleteMapping("/{mat}")
+    public String deletar(@PathVariable Long mat) {
+        //Linha de teste para exlusão.
+        return "Cliente " + mat + " deletado com sucesso.";
+    }
+
     
 }
